@@ -35,5 +35,13 @@ module Reservamos
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.logger = Logger.new("log/#{Rails.env}.log")
+    config.log_level = :warn
+
+    config.autoload_paths += [
+      "#{Rails.root}/app/services/locations",
+      "#{Rails.root}/app/services/weather",
+    ]
   end
 end

@@ -1,0 +1,33 @@
+require:
+  - rubocop-rails
+
+Rails:
+  StyleGuideBaseURL: https://rails.rubystyle.guide
+  DocumentationBaseURL: https://docs.rubocop.org/rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/{rails,rake}'
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/services/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 25
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
