@@ -3,3 +3,4 @@ rvm:
   - 3.0
 script:
   - rubocop
+  - rails test test/controllers/v1
