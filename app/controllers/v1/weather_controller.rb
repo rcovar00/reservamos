@@ -21,7 +21,7 @@ module V1
         if response.first
           data = response[1]
           # Response successfully
-          render json: { data: }, status: :ok
+          render json: { data: data }, status: :ok
           return
         end
       end
