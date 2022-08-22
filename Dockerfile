@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:3.1.2
+FROM ruby:3.0.4
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock

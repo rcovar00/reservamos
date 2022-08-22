@@ -6,7 +6,7 @@ Rails:
   DocumentationBaseURL: https://docs.rubocop.org/rubocop-rails
 
 AllCops:
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.0
   NewCops: enable
   Exclude:
     - 'bin/**/*'
